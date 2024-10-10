@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація у салоні краси</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+<div class="register-container">
+  <h2>Реєстрація</h2>
+  <form action="/register" method="post" enctype="multipart/form-data">
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Пароль" required>
+    <input type="text" placeholder="Прізвище" required>
+    <input type="text" placeholder="Ім'я" required>
+    <input type="text" placeholder="По батькові" required>
+    <input type="date" placeholder="Дата народження" required>
+    <select required>
+      <option value="">Оберіть групу</option>
+      <option value="A">Працівник</option>
+      <option value="B">Клієнт</option>
+    </select>
+    <input type="file" accept=".jpg, .png">
+    <button type="submit">Реєстрація</button>
+  </form>
+  <h4>Вже зареєстровані?</h4>
+  <button onclick="location.href='login.html'">
+      Увійти
+  </button>
+</div>
+</body>
+</html>
